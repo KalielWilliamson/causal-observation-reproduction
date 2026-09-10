@@ -1,0 +1,63 @@
+site_name: Causal Observation Reproduction
+site_url: https://causal-observation-reproduction.readthedocs.io/
+site_author: "Kaliel Williamson"
+
+repo_name: "KalielWilliamson/causal-observation-reproduction"
+repo_url: "https://github.com/KalielWilliamson/causal-observation-reproduction"
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.expand
+    - navigation.tracking
+    - toc.follow
+  palette:
+    # See options to customise your color scheme here:
+    # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+plugins:
+  autorefs: {}
+  mkdocstrings:
+    handlers:
+      python:
+        paths: [.]
+        inventories:
+          - https://docs.python.org/3/objects.inv
+          - https://docs.pydantic.dev/latest/objects.inv
+        options:
+          members_order: source
+          separate_signature: true
+          filters: ["!^_"]
+          show_root_heading: true
+          show_if_no_docstring: true
+          show_signature_annotations: true
+  search: {}
+
+nav:
+  - Home: index.md
+  - Reproduction boundary: reproduction.md
+  - Experiment configuration: experiments.md
+  - Paper experiment inventory: paper_experiment_inventory.md
+  - Sequential benchmark contract: benchmark_contract.md
+  - Reproduction fidelity audit: reproduction_audit.md
+  - Certified cache control: certified_cache_control.md
+  - Lean separation audit: lean_separation.md
+  - Benchmark landscape: benchmark_landscape.md
+  - Baseline fidelity: baseline_fidelity.md
+  - Public release: public_release.md
+  - Paper skeleton: paper_skeleton.md
+  - Python API: api.md

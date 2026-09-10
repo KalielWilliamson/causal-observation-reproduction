@@ -1,0 +1,12 @@
+.git
+.venv
+.venv311
+.venv313
+.nox
+.pytest_cache
+.mypy_cache
+.ruff_cache
+artifacts
+site
+__pycache__
+**/__pycache__

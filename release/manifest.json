@@ -1,0 +1,44 @@
+{
+  "schema_version": "causal-observation-reproduction.release-manifest.v1",
+  "status": "software_ready_evidence_not_yet_deposited",
+  "source_revision": "b4c468ef4dfac5eeab8b11a9e7f990ba36824748",
+  "claim_scope": "finite synthetic one-step and sequential POSCM results plus the descriptive 16-row MiniGrid external control",
+  "known_discrepancies": [
+    {
+      "id": "one_step_corpus_cardinality",
+      "manuscript_statement": "274 learning examples plus 60 held-out examples",
+      "pinned_executable_source": "274 total rows: 180 development, 34 historical, and 60 held-out",
+      "outcome_conclusions_match": true,
+      "protocol_cardinality_matches": false
+    }
+  ],
+  "protocol_sha256": {
+    "sequential": "eaaf2c25c5f31e25d5716dfb7e1c6cefb6bc11590eef3314326642b9df3817f6",
+    "one_step": "d1a1c44d554733ef41e8bed81fd8106fd658ae5ec8162aecc77a29d1ae7e75b4",
+    "source_provenance": "45ee3ca168f7230af2452848c88975c14cd83f9627171f04462705c195457ad3"
+  },
+  "evidence_sha256": null,
+  "required_evidence_files": [
+    "run_manifest.json",
+    "sequential/confirmation_rows.json",
+    "sequential/confirmation_metrics.json",
+    "sequential/locked_confirmation_manifest.json",
+    "sequential/conditional_efficiency_confirmation_summary.json",
+    "sequential/clustered_noninferiority.json",
+    "sequential/online_compute_characterization.json",
+    "sequential/parity_report.json",
+    "one-step/datasets/learned_coo_examples.parquet",
+    "one-step/datasets/dataset_manifest.json",
+    "one-step/splits/split_manifest.json",
+    "one-step/metrics/policy_metrics.csv",
+    "one-step/manifests/run_manifest.json",
+    "one-step/learned_coo_claim_evidence.json",
+    "one-step/parity_report.json",
+    "minigrid-audit/minigrid_external_control.jsonl",
+    "minigrid-audit/minigrid_external_control.parquet",
+    "minigrid-audit/minigrid_external_control_summary.json"
+  ],
+  "evidence_policy": "Package a fresh exact `paper` run with tools/release_tools.py and deposit the complete verified tree with the matching software revision.",
+  "archive_url": null,
+  "doi": null
+}

@@ -1,0 +1,31 @@
+{
+  "relations": [
+    {
+      "mean_readiness": 0.2653192179,
+      "perturbation_type": "cross_family_causal_negative_control",
+      "row_count": 4,
+      "transferred": 0
+    },
+    {
+      "mean_readiness": 1.0,
+      "perturbation_type": "same_env_same_seed",
+      "row_count": 4,
+      "transferred": 4
+    },
+    {
+      "mean_readiness": 1.0,
+      "perturbation_type": "same_env_seed_shift",
+      "row_count": 4,
+      "transferred": 4
+    },
+    {
+      "mean_readiness": 0.7811236821,
+      "perturbation_type": "same_family_scale_change",
+      "row_count": 4,
+      "transferred": 4
+    }
+  ],
+  "row_count": 16,
+  "schema_version": "causal-observation-reproduction.minigrid-external-control.v1",
+  "source_revision": "b4c468ef4dfac5eeab8b11a9e7f990ba36824748"
+}

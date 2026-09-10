@@ -1,0 +1,166 @@
+{
+  "schema_version": "causal-observation-reproduction.source-provenance.v1",
+  "source_revision": "b4c468ef4dfac5eeab8b11a9e7f990ba36824748",
+  "source_scientific_tree": "8bee95975d986a1e41dd4537ee816b3d227703a0",
+  "source_test_tree": "787cea452e00c0795c1c11e00eff0c29bbcb39aa",
+  "selection_rule": "Transitive dependency closure of algorithms, protocols, formal statements, and scientific tests cited by or used to produce the manuscript; lab orchestration and storage integrations are excluded.",
+  "python_modules": [
+    {
+      "source_path": "research/causal_observability/artifacts.py",
+      "source_blob": "c7c0e922443eef3d8b44e2b40e33046535a4d8c5",
+      "public_path": "src/causal_observation_reproduction/reference/artifacts.py",
+      "transformations": ["package import rewrite", "stronger static types"]
+    },
+    {
+      "source_path": "research/causal_observability/domain.py",
+      "source_blob": "2261f72584eabd532648d77dde0e45c5571c7d6e",
+      "public_path": "src/causal_observation_reproduction/reference/domain.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "research/causal_observability/interventional_signature.py",
+      "source_blob": "302fe678b863e73ad8a9622d6162e00152ca52f9",
+      "public_path": "src/causal_observation_reproduction/reference/interventional_signature.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "research/causal_observability/learned_coo_gate.py",
+      "source_blob": "19306ec3d3836f823faf0ac306391ed1ae67b6b3",
+      "public_path": "src/causal_observation_reproduction/reference/learned_coo_gate.py",
+      "transformations": [
+        "package import rewrite",
+        "MLflow and knowledge-graph registration removed",
+        "local evidence writer",
+        "stronger static types"
+      ]
+    },
+    {
+      "source_path": "research/causal_observability/poscm_dimensions.py",
+      "source_blob": "81e21e05afdbcf20b7170de089e2bf9a0faceb10",
+      "public_path": "src/causal_observation_reproduction/reference/poscm_dimensions.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "research/causal_observability/quotient_compute_characterization.py",
+      "source_blob": "e228c46a649a8259146d34ffe48309700f7afe3a",
+      "public_path": "src/causal_observation_reproduction/reference/compute_characterization.py",
+      "transformations": [
+        "package import rewrite",
+        "MLflow integration removed",
+        "validated JSON decoding",
+        "stronger static types"
+      ]
+    },
+    {
+      "source_path": "research/causal_observability/quotient_family.py",
+      "source_blob": "42fcd63ee02b0bbaa8bcf6cc2acb5b24d0ce07dc",
+      "public_path": "src/causal_observation_reproduction/reference/quotient_family.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "research/causal_observability/quotient_recovery/statistics.py",
+      "source_blob": "2e9211219b33255af5d854abb51dc30f922eb7ab",
+      "public_path": "src/causal_observation_reproduction/reference/quotient_recovery/statistics.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "research/causal_observability/rl_env.py",
+      "source_blob": "a0efe349e892edde08dcaf031874e4d188fe67e6",
+      "public_path": "src/causal_observation_reproduction/reference/scm_evaluator.py",
+      "transformations": [
+        "SCM evaluator dependency extracted",
+        "Gym wrapper omitted",
+        "stronger static types"
+      ]
+    },
+    {
+      "source_path": "research/causal_observability/scm_complexity.py",
+      "source_blob": "8ab07b5fc9e9863e766356a62c7b065215bae214",
+      "public_path": "src/causal_observation_reproduction/reference/scm_complexity.py",
+      "transformations": ["package import rewrite", "stronger static types"]
+    },
+    {
+      "source_path": "research/causal_observability/semantic_world.py",
+      "source_blob": "1dcb4f12dc6e8f4efaf2f4c92c4982f40e93eda1",
+      "public_path": "src/causal_observation_reproduction/reference/semantic_world.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "research/causal_observability/sequential_sensing.py",
+      "source_blob": "c3caa0a81552519d624a3a1e9e60bb19fdc31ba3",
+      "public_path": "src/causal_observation_reproduction/reference/sequential_sensing.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "research/causal_observability/sequential_sensing_experiment.py",
+      "source_blob": "1d74f56925f0b414179d72a0b8723766c7c5b9e1",
+      "public_path": "src/causal_observation_reproduction/reference/sequential_experiment.py",
+      "transformations": [
+        "package import rewrite",
+        "MLflow integration removed",
+        "legacy metadata normalized",
+        "stronger static types"
+      ]
+    },
+    {
+      "source_path": "research/causal_observability/sequential_theorem_benchmark.py",
+      "source_blob": "aa9eda616659ec3a9cc903c608b4ccd500d6cdff",
+      "public_path": "src/causal_observation_reproduction/reference/sequential_theorem_benchmark.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "research/causal_observability/sequential_contract.py",
+      "source_blob": "e7fc4423cb91fe799c7dd931899b8d4c17e4ec6e",
+      "public_path": "src/causal_observation_reproduction/reference/sequential_contract.py",
+      "transformations": [
+        "legacy filename and schema metadata normalized",
+        "package import rewrite",
+        "validated manifest decoding"
+      ]
+    },
+    {
+      "source_path": "research/causal_observability/topology.py",
+      "source_blob": "055b137b6c135da599977bcb5f6727bbd8e3276c",
+      "public_path": "src/causal_observation_reproduction/reference/topology.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "research/causal_observability/topology_factory.py",
+      "source_blob": "cb599bf3f714f160abce6d3acac8afc1e90ec62a",
+      "public_path": "src/causal_observation_reproduction/reference/topology_factory.py",
+      "transformations": ["package import rewrite", "stronger static types"]
+    },
+    {
+      "source_path": "research/hashing.py",
+      "source_blob": "4cfa77921cb2ea8f49def6f68633f20fc6e0a802",
+      "public_path": "src/causal_observation_reproduction/reference/hashing.py",
+      "transformations": ["package import rewrite"]
+    },
+    {
+      "source_path": "core/numeric.py",
+      "source_blob": "3c8557e6591145a2d2924dff8a2d927a56d9a10e",
+      "public_path": "src/causal_observation_reproduction/reference/numeric.py",
+      "transformations": ["package import rewrite"]
+    }
+  ],
+  "formal_corpora": [
+    {
+      "source_path": "formal/CausalObservability",
+      "source_tree": "e9e6090ed922d5b668e773a8e2ebc48ac5d28593",
+      "public_path": "CausalObservationReproduction/Manuscript",
+      "transformations": ["namespace and import rewrite only"]
+    },
+    {
+      "source_path": "research/theory/causal_observability_refinement",
+      "source_tree": "61c3a1e7a6f0f2d6caad0d774b31aafc86b4ce81",
+      "public_path": "CausalObservationReproduction/ManuscriptChecks/Refinement",
+      "transformations": ["namespace and import rewrite only"]
+    }
+  ],
+  "manuscript_inputs": {
+    "paper_manifest_blob": "a34ef69b29b75c2a2ccc36a389c5dba5a90b1469",
+    "sequential_summary_blob": "9551dd5e5dec7a3d861a44a192547972c188d316",
+    "compute_summary_blob": "2b941c8ebc75eb0718302ef90f94752ead6c95b4",
+    "minigrid_evaluated_rows_sha256": "4bf02d1a5297792b66a6fed49171aae7c76a04b67f56434797a2acdd45031361"
+  }
+}

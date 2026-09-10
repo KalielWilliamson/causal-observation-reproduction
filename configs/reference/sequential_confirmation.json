@@ -1,0 +1,40 @@
+{
+  "cache_policy": "disabled_for_all_arms",
+  "cluster_bootstrap_repetitions": 1000,
+  "distractor_counts": [0, 6, 12],
+  "evaluation_seeds": [
+    401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415,
+    416
+  ],
+  "generic_rollout_budgets": [1, 4, 16],
+  "heldout_topology_families": [
+    "qualifying_or_negative_boundary_scope",
+    "observability_scope_qualifier"
+  ],
+  "horizons": [3, 5],
+  "noninferiority_margin": 0.05,
+  "output_dir": "artifacts/causal_quotient_confirmation_matrix",
+  "policy_arms": [
+    "never_refine",
+    "always_refine",
+    "random_budget_matched",
+    "uncertainty",
+    "information_gain",
+    "generic_bounded_rollout_voi",
+    "capacity_matched_no_quotient",
+    "learned_causal_quotient",
+    "oracle"
+  ],
+  "primary_generic_rollout_budget": 16,
+  "probe_costs": [0.1, 0.4],
+  "regimes": ["positive", "null", "invalid"],
+  "topology_instances_per_family": 12,
+  "training_seeds": [
+    101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115,
+    116
+  ],
+  "training_topology_families": [
+    "positive_boundary_advantage",
+    "null_or_competitive_endpoint"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "claim_id": "causal_quotient_conditional_voi_efficiency",
+  "comparisons": [
+    {
+      "budget": 1,
+      "equal": 4464,
+      "generic_mean_branches": 2.5625,
+      "generic_mean_rollouts": 3.1875,
+      "quotient_better": 0,
+      "quotient_mean_branches": 0.0,
+      "quotient_mean_rollouts": 0.0,
+      "quotient_worse": 144,
+      "regime": "positive",
+      "return_gap_quotient_minus_generic": -0.0078125
+    },
+    {
+      "budget": 4,
+      "equal": 4464,
+      "generic_mean_branches": 6.295572916666667,
+      "generic_mean_rollouts": 9.0,
+      "quotient_better": 144,
+      "quotient_mean_branches": 0.0,
+      "quotient_mean_rollouts": 0.0,
+      "quotient_worse": 0,
+      "regime": "positive",
+      "return_gap_quotient_minus_generic": 0.03125
+    },
+    {
+      "budget": 16,
+      "equal": 4608,
+      "generic_mean_branches": 22.35546875,
+      "generic_mean_rollouts": 32.0,
+      "quotient_better": 0,
+      "quotient_mean_branches": 0.0,
+      "quotient_mean_rollouts": 0.0,
+      "quotient_worse": 0,
+      "regime": "positive",
+      "return_gap_quotient_minus_generic": 0.0
+    },
+    {
+      "budget": 1,
+      "equal": 4608,
+      "generic_mean_branches": 4.0,
+      "generic_mean_rollouts": 8.0,
+      "quotient_better": 0,
+      "quotient_mean_branches": 0.0,
+      "quotient_mean_rollouts": 0.0,
+      "quotient_worse": 0,
+      "regime": "null",
+      "return_gap_quotient_minus_generic": 0.0
+    },
+    {
+      "budget": 4,
+      "equal": 4608,
+      "generic_mean_branches": 13.770833333333334,
+      "generic_mean_rollouts": 32.0,
+      "quotient_better": 0,
+      "quotient_mean_branches": 0.0,
+      "quotient_mean_rollouts": 0.0,
+      "quotient_worse": 0,
+      "regime": "null",
+      "return_gap_quotient_minus_generic": 0.0
+    },
+    {
+      "budget": 16,
+      "equal": 4608,
+      "generic_mean_branches": 52.854166666666664,
+      "generic_mean_rollouts": 128.0,
+      "quotient_better": 0,
+      "quotient_mean_branches": 0.0,
+      "quotient_mean_rollouts": 0.0,
+      "quotient_worse": 0,
+      "regime": "null",
+      "return_gap_quotient_minus_generic": 0.0
+    }
+  ],
+  "primary_noninferiority": {
+    "bootstrap_ci": [0.0, 0.0],
+    "budget": 16,
+    "bootstrap_clusters": 24,
+    "cluster_key": "topology_instance_id",
+    "margin": 0.05,
+    "noninferior": true,
+    "quotient_minus_generic_mean": 0.0
+  },
+  "schema_version": "causal-observation-reproduction.sequential-confirmation-reference.v1",
+  "scope": {
+    "distractor_levels": [0, 6, 12],
+    "evaluation_seeds": 16,
+    "generic_rollout_budgets": [1, 4, 16],
+    "heldout_topology_families": 2,
+    "horizons": [3, 5],
+    "paired_evaluations_per_budget_regime": 4608,
+    "probe_costs": [0.1, 0.4],
+    "topology_clusters": 24
+  },
+  "source_revision": "b4c468ef4dfac5eeab8b11a9e7f990ba36824748"
+}

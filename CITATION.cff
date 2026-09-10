@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite this software release."
+title: "Sequential Causal-Observation Benchmark"
+version: 0.1.0
+date-released: 2026-09-01
+authors:
+  - family-names: Williamson
+    given-names: Kaliel
+repository-code: "https://github.com/KalielWilliamson/causal-observation-reproduction"
+license: MIT

@@ -1,0 +1,38 @@
+{
+  "counted_online_work": {
+    "generic_bounded_rollout_voi": {
+      "ambient_observation_scalar_elements": 18579456,
+      "candidate_branches": 103014,
+      "decision_invocations": 18432,
+      "public_rollouts": 147456,
+      "simulated_control_transitions": 589824
+    },
+    "learned_causal_quotient": {
+      "candidate_branches": 0,
+      "decision_invocations": 18432,
+      "public_rollouts": 0,
+      "scalar_threshold_comparisons": 4608,
+      "simulated_control_transitions": 0,
+      "threshold_table_lookups": 4608
+    }
+  },
+  "evidence_role": "post_hoc_descriptive_online_compute_characterization",
+  "not_claimed": [
+    "FLOPs",
+    "hardware-independent efficiency",
+    "registered inferential result"
+  ],
+  "schema_version": "causal-observation-reproduction.online-compute-reference.v1",
+  "source": {
+    "confirmation_rows_sha256": "da8b2a8e70ef1207cc7b715f4c9403e500acd5b51ddcb865474059d4bcf26c0c",
+    "locked_manifest_sha256": "4e56ddccaa81b306607465ce0d57aa2037505f78f8b2c3404aba8920501f3d2a",
+    "paired_positive_episodes": 4608,
+    "primary_rollout_budget": 16
+  },
+  "source_revision": "b4c468ef4dfac5eeab8b11a9e7f990ba36824748",
+  "timing_median_ns_per_decision": {
+    "generic_bounded_rollout_voi": 191078000,
+    "learned_causal_quotient": 997
+  },
+  "timing_protocol": "fixed-host elapsed time on one held-out positive decision per arm; two warm-up repetitions, five measured repetitions; gate uses batches of 10000 decisions"
+}

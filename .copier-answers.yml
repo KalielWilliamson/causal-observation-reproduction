@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 2026.08.14-2-gf623f12
+_src_path: gh:scientific-python/cookie
+backend: uv
+docs: properdocs
+email: kwilliamson35@gatech.edu
+full_name: Kaliel Williamson
+license: MIT
+org: KalielWilliamson
+project_name: causal-observation-reproduction
+project_short_description: Reproducible benchmark and formal artifacts for sequential
+    causal observation research.
+url: https://github.com/KalielWilliamson/causal-observation-reproduction
+vcs: false
