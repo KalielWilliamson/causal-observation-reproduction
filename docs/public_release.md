@@ -38,6 +38,8 @@ uv run python tools/release_tools.py snapshot \
 ```
 
 The exporter includes no Git history and rejects private-source or legacy
+repository inputs, keeping the public snapshot independent of the research
+workspace.
 
 For a reviewed working tree that has not yet been committed, use:
 
